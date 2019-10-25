@@ -1,0 +1,132 @@
+header, section, footer, aside, main, article, div, figure, nav{
+	display: block;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+myblock{
+	display: block;
+	background-color: #dddddd;
+	padding: 50px;
+	font-size: 30px;
+}
+
+/* Setting Button Style */
+button{
+	background-color: #4caf50;
+	color: white;
+	padding: 12px 23px;
+	margin: 12px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	
+	
+}
+
+button:hover{
+	opacity: 0.8;
+	box-shadow: -1px -1px 8px 5px red;
+}
+
+input[type=text], input[type=password]{
+	width: 100%;
+	padding: 12px 23px;
+	margin: 12px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+/* The Modal Style */
+.modal{
+	display: none; /* hidden bydefault */
+	position: fixed; /*  stay in place */
+	z-index: 1; /* display on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* full width */
+	height: 100%; /* full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0,0);
+	background-color: rgb(0,0,0,0.4);
+	padding-top: 12px;
+
+}
+
+.mymodal-content{
+	background-color: #fefefe;
+	margin: 2% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 60%; /* Could be more or less, depending on screen size */
+
+}
+
+
+.animate{
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s;
+}
+
+@webkit-keyframes animtezoom{
+	from{-webkit-transform: scale(0)}
+	to{-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom{
+	from{transform: scale(0);}
+	to{transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and(max-width: 300px){
+	span.psw{
+		display: block;
+		float: none;
+	}
+	.cancelbtn{
+		width: 100%;
+	}
+}
+
+.cancelbtn{
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+
+.imgcontainer{
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+.imgavatar{
+	width: 40%;
+	border-radius: 50%;
+}
+
+span.psw {
+  float: right;
+  
+}
+
+.container{
+	padding: 16px;
+}
+
+.close{
+	position: absolute;
+	right: 26px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+	color: red;
+	cursor: pointer;
+}
