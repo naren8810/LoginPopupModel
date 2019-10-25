@@ -20,7 +20,7 @@
 		
 		<!-- The Modal(div) -->
 		<div id="mydivmodal" class="modal">
-			<form class="mymodal-content animate" action="index.php" method="get">
+			<form class="mymodal-content animate" action="" method="get">
 				<h3><center>LOGIN FORM<center></h3>
 
 				<div class="imgcontainer">
@@ -34,7 +34,7 @@
 					<input type="text" name="uname" placeholder="Enter Username" required="required">
 					<label for="pass"></label>
 					<input type="password" name="pass" placeholder="Enter Password" required="required">
-					<button type="submit" name="submit">Login</button>
+					<button type="submit" name="submit" onclick="document.getElementById('successmsg').style.display='block'">Login</button>
 
 					<label for="remember">
 						<input type="checkbox" checked="checked" name="remember"> 
@@ -48,13 +48,8 @@
 			</form>
 		</div>
 	</myblock>
+	<div id="successmsg">
+		<h3>Thank You! Visite Again! or Regresh to Try Again</h3>
+	</div>
 </body>
 </html>
-
-
-<?php 
-
-if (isset($_GET['submit'])) {
-	echo 'Thank You! Visit Again!' Refres Page to Try Again;
-}
- ?>
